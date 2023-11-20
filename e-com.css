@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image:url('back123.jpg');
+    background-position: center center;
+    background-size: cover;    
+}
+
+#caption{
+    padding-top: 150px;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#caption h1{
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+#caption label{
+    font-size: 30px;
+    margin-left: 40px;
+    color: orangered;
+    background-color: white;
+}
+
+.frame{
+    background-image: linear-gradient(130deg,rgb(245, 238, 242),rgb(245, 238, 242));
+    background-position: center;
+    background-size: cover; 
+}
+
+label{
+    font-family: Calibri;
+    color: orange;
+    margin: 10px; 
+    padding-left: 5px;
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: bolder;
+}
+
+.hed{
+    color: red;
+}
+
+input{
+    padding: 15px;
+}
+
+#icon{
+    margin-right: 30px;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    background: black;
+    line-height: 50px;
+    color: white; 
+    height: 50px;
+}
+
+.navbar{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+}
+
+ul a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+    /* background: black; */
+}
+
+ul a.active,a:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+ul #sam{
+    display: none;
+}
+
+#chbx{
+    float: right;
+    color: white;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+#click:checked ~ .navbar{
+    left: 0;
+}
+
+h3{
+    color: black;
+}
+
+.mens{
+    height: 250px;
+    width: 350px;
+
+}
+
+
+#srch{
+    border: none;
+    margin-right: 20px;
+    padding: 5px;
+    color: #000;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.fullsize{
+    cursor: zoom-out;
+    transform: scale(1.1,1.5);
+}
+
+.images img{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+p{
+    margin-left: 5px;
+    color: black;
+    text-align: center;
+}
+
+.dash{
+    text-decoration: line-through;
+    color: green;
+}
+
+#discount{
+    color: red;
+}
+
+.contact{
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around; 
+    background-color: black;
+    color: white;
+}
+
+h1{
+    margin-left: 550px;
+    padding: 10px;
+}
+
+ #home li{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.ic i{
+    padding: 5px;
+}
+
+
+@media(max-width: 872px){
+    ul{
+        background: blueviolet;
+    }
+   
+    #chbx{
+        display: block;
+    }
+
+    #srch,#icon{
+        display: none;
+    }
+
+     .navbar{
+        width: 100%;
+        height: 100vh; 
+        display: block; 
+        position: fixed;
+        left: -100%;
+        transition: .5s;
+    } 
+
+    .navbar li{
+        display: block; 
+        text-align: center;
+        line-height: 30px;
+        margin: 30px;
+        letter-spacing: 5px;
+    }
+}

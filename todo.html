@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web-based To-Do List App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .app {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .task label {
+            flex: 1;
+        }
+        .task button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Web-based To-Do List</h1>
+        <ul id="task-list">
+            <!-- Task items will be added here dynamically -->
+        </ul>
+        <div class="task">
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task" placeholder="Enter your task">
+            <button id="add-task">Add</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for task addition and removal can be added here.
+        document.getElementById('add-task').addEventListener('click', function() {
+            const taskText = document.getElementById('new-task').value;
+            if (taskText.trim() !== '') {
+                const taskList = document.getElementById('task-list');
+                const li = document.createElement('li');
+                li.innerHTML = `   
+                    <div class="task">
+                        <label>${taskText}</label>
+                        <button class="remove-task">Remove</button>
+                    </div>
+                `;
+                taskList.appendChild(li);
+                document.getElementById('new-task').value = '';
+
+                // Add functionality to remove tasks
+                li.querySelector('.remove-task').addEventListener('click', function() {
+                    li.remove();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

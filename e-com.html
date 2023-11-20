@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e-com.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <nav class="container">
+            <input type="checkbox" id="click">
+            <label for="click">
+                <i id="chbx" class="fa-solid fa-bars"></i>
+            </label>
+            <label>Blaz<span class="hed">buy</span></label>
+            <ul class="navbar">
+                <li> <a class="active" href="#Home">Home</a></li>
+                <li> <a href="#Products">Products</a></li>
+                <li> <a href="#Contact">Contact</a></li>
+                <input type="search" id="srch" placeholder="Search....." size="60" width="15">
+                <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                <li> <a href="#Sign-in">Sign in</a></li>
+            </ul>
+        </nav>
+        <a name="Home"></a>
+        <div id="caption">
+           <h1> Stunning<br> Outfits<br>for<br> Every<br> Occasion<br></h1>
+           <label class="content">Discount on every products you buy</label>
+        </div>
+    </div>
+    <!-- <h3>Where Trends Begin: Blazbuy - Embrace the Latest in Fashion and Lifestyle's</h3> -->
+    <a name="Products"></a>
+    <div class="frame">
+        <div class="images">
+            <div class="one">
+                <img class="mens" src="shrt4.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Woxen <br>Men Regular Fit T-Shirt <br>&#8377;399 &#8377;<span class="dash">2,000</span>
+                    <span id="discount">(81% off)</span><br> <button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="hudi2.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">ADRO <br>Men's Cotton Hoodied Sweatshirt <br>&#8377;999 &#8377;<span class="dash">2,799</span>
+                    <span id="discount">(61% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="shrt1.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Eyebogler <br>Men's T-Shirt <br>&#8377;399 &#8377;<span class="dash">2,000</span>
+                    <span id="discount">(81% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="pant1.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Eerica <br>Slim fit Cargo Pant <br>&#8377;1,399 &#8377;<span class="dash">2,998</span>
+                    <span id="discount">(81% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="hudi1.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">FUNKY MONKEY <br>Men Full Sleee Solid Hoodied Sweatshirt <br>&#8377;599 &#8377;<span class="dash">1,999</span>
+                    <span id="discount">(70% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="pant4.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">LYRXXX <br>Men's Casual Cargo Pant <br>&#8377;6,638 &#8377;<span class="dash">10,622</span>
+                    <span id="discount">(21% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+
+            <div class="one">
+                <img class="mens" src="woimg1.jpg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Lilawati <br>Women's Crepe Kurtis <br>&#8377;293 &#8377;<span class="dash">2,000</span>
+                    <span id="discount">(82% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="woimg2.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">DEEBACO <br>Women's Ethnic Motfis Dress <br>&#8377;1,622 &#8377;<span class="dash">2,495</span>
+                    <span id="discount">(35% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="woimg3.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Rayani <br>Women Fit Nad Flare Blue Dress <br>&#8377;489 &#8377;<span class="dash">1,999</span>
+                    <span id="discount">(75% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="woimg7.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">EXPRESS <br>Hot Blue Pleated Dress <br>&#8377;1018 &#8377;<span class="dash">1,560</span>
+                    <span id="discount">(10% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="woimg5.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Oxblood <br> Rosalba Gown Dress <br>&#8377;1,530 &#8377;<span class="dash">3,400</span>
+                    <span id="discount">(55% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+            <div class="one">
+                <img class="mens" src="woimg6.jpeg" alt="refresh" onclick="zoom(this)">
+                <p class="rate">Yunlo <br> Women's Floral Sleeveless Vintage Dress <br>&#8377;639 &#8377;<span class="dash">1,299</span>
+                    <span id="discount">(51% off)</span><br><button onclick="result()">Add To Cart</button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <a name="Contact"></a>
+    <div class="contact">
+        <div class="contact-info">
+            <ul id="home">
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <ul id="home">
+                <li>Sign in</li>
+                <li>Support</li>
+                <li>Terms and Conditions</li>
+                <li>Log Out</li>
+            </ul>
+            <ul id="home">
+                <li>website: www.blazbuy.com</li>
+                <li>E-mail:  blazbuy@gmail.com</li>
+                <li>Phone:   +91 81 0089 1500</li>
+                <li>
+                    <h4>Social Network</h4>
+                    <div class="ic">
+                    <i class="fa-brands fa-facebook"> </i>
+                    <i class="fa-brands fa-twitter"> </i>
+                    <i class="fa-brands fa-instagram"> </i>
+                    <i class="fa-brands fa-linkedin"> </i>
+                </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script src="e-com.js"></script>
+
+</html>
